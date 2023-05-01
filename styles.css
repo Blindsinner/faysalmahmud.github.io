@@ -1,72 +1,60 @@
-* {
-  box-sizing: border-box;
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: 'Roboto', Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 20px;
-}
-
 header {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
 }
 
 .profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .profile-image img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
-  object-position: top;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
 }
 
-h2 {
-  font-size: 1.5em;
+.h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
   margin-bottom: 10px;
-}
-
-h3 {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-}
-.contact-line {
-  margin-bottom: 5px;
-  white-space: nowrap; /* Prevents line breaks within the content */
 }
 
 .contact-info {
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.contact-info p {
+.contact-line {
   margin-bottom: 5px;
 }
 
-.contact-info a {
+a {
   color: #333;
   text-decoration: none;
 }
+
 a:hover {
   color: blue;
   font-size: 1.1em;
@@ -74,59 +62,41 @@ a:hover {
 }
 
 main {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  max-width: 1100px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 20px;
 }
 
 .left-column {
-  flex: 1;
-  padding-right: 30px;
-  border-right: 1px solid #ccc;
+  flex: 3;
+  padding-right: 20px;
 }
 
 .right-column {
   flex: 1;
-  padding-left: 30px;
 }
 
-main ul {
-  list-style: none;
+h2 {
+  font-size: 20px;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
-main li {
+h3 {
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
-main p {
-  margin-bottom: 10px;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
-  }
+li {
+  margin-bottom: 20px;
+}
 
-  .left-column,
-  .right-column {
-    flex: 1;
-    padding: 0;
-    border: none;
-  }
-
-  .left-column {
-    margin-bottom: 30px;
-  }
-
-  .right-column {
-    padding-left: 30px; /* Add this line to maintain spacing on smaller screens */
-  }
+p {
+  margin-bottom: 20px;
 }
