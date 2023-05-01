@@ -98,3 +98,30 @@ main li {
 main p {
   margin-bottom: 10px;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    padding-top: 20px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    flex: 1;
+    padding: 0;
+    border: none;
+  }
+
+  .left-column {
+    margin-bottom: 30px;
+  }
+}
