@@ -49,6 +49,10 @@ h3 {
   font-size: 1.3em;
   margin-bottom: 10px;
 }
+.contact-line {
+  margin-bottom: 5px;
+  white-space: nowrap; /* Prevents line breaks within the content */
+}
 
 .contact-info {
   text-align: center;
